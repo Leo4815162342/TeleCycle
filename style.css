@@ -1028,6 +1028,11 @@ div.wpcf7-validation-errors {
     background: url("img/facebook-icon-x2.png") no-repeat;
     background-size: 11px 24px;
   }
+
+  .wpcf7-checkbox input:checked + label {
+    background: url("img/checkmark-2x.png") no-repeat center center;
+    background-size: 22px 19px;
+  }
 }
 /*------------------------------------*\
         RESPONSIVE
