@@ -62,11 +62,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.banner_header:before, .nav-menu:before, .contact-elems:before, .footer-nav:before, .copyright:before, .social-links:before, .page:before, .contact-form:before, .contact-boxes:before, .banner_header:after, .nav-menu:after, .contact-elems:after, .footer-nav:after, .copyright:after, .social-links:after, .page:after, .contact-form:after, .contact-boxes:after {
+.banner_header:before, .nav-menu:before, .contact-elems:before, .footer-nav:before, .copyright:before, .social-links:before, .page:before, .contact-form:before, .wpcf7-checkbox:before, .wpcf7-checkbox .wpcf7-list-item:before, .contact-boxes:before, .banner_header:after, .nav-menu:after, .contact-elems:after, .footer-nav:after, .copyright:after, .social-links:after, .page:after, .contact-form:after, .wpcf7-checkbox:after, .wpcf7-checkbox .wpcf7-list-item:after, .contact-boxes:after {
   content: "";
   display: table;
 }
-.banner_header:after, .nav-menu:after, .contact-elems:after, .footer-nav:after, .copyright:after, .social-links:after, .page:after, .contact-form:after, .contact-boxes:after {
+.banner_header:after, .nav-menu:after, .contact-elems:after, .footer-nav:after, .copyright:after, .social-links:after, .page:after, .contact-form:after, .wpcf7-checkbox:after, .wpcf7-checkbox .wpcf7-list-item:after, .contact-boxes:after {
   clear: both;
 }
 
@@ -829,7 +829,7 @@ h4 {
   width: 324px;
   float: left;
 }
-.inputs input {
+.inputs .wpcf7-text {
   width: 100%;
   height: 44px;
   color: #214c86;
@@ -844,10 +844,10 @@ h4 {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-.inputs input:focus {
+.inputs .wpcf7-text:focus {
   outline: none;
 }
-.inputs input.wpcf7-not-valid {
+.inputs .wpcf7-text.wpcf7-not-valid {
   border: 2px solid #ef0707;
 }
 
@@ -862,6 +862,49 @@ label.req:after {
   font-weight: 700;
 }
 
+.checkbox-827 {
+  display: block;
+  margin-top: 8px;
+}
+.checkbox-827 span {
+  display: block;
+}
+
+.wpcf7-checkbox .wpcf7-list-item {
+  margin-left: 0;
+}
+.wpcf7-checkbox .wpcf7-list-item * {
+  float: left;
+}
+.wpcf7-checkbox .wpcf7-list-item.first {
+  float: left;
+}
+.wpcf7-checkbox .wpcf7-list-item.last {
+  float: right;
+}
+.wpcf7-checkbox input {
+  display: none;
+}
+.wpcf7-checkbox input:checked + label {
+  background: url("img/checkmark.png") no-repeat center center;
+}
+.wpcf7-checkbox label {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  border: 2px solid #cacbcb;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.wpcf7-checkbox .wpcf7-list-item-label {
+  height: 34px;
+  line-height: 34px;
+  margin-left: 13px;
+}
+
 .message {
   width: 324px;
   float: right;
@@ -869,7 +912,7 @@ label.req:after {
 
 textarea {
   width: 100%;
-  height: 216px;
+  height: 276px;
   color: #214c86;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -1139,6 +1182,19 @@ div.wpcf7-validation-errors {
   .message {
     float: none;
     width: 100%;
+  }
+
+  .message {
+    margin-top: 25px;
+  }
+
+  .wpcf7-checkbox .wpcf7-list-item.first {
+    float: none;
+  }
+
+  .wpcf7-checkbox .wpcf7-list-item.last {
+    float: none;
+    margin: 25px 0 0 0;
   }
 }
 @media all and (max-width: 640px) {

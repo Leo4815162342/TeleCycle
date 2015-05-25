@@ -47,5 +47,11 @@ $(function() {
 			$('.menu-mobile-menu-container').hide();
 
 		}
-	});				
+	});
+	var ch1 = $("input:checkbox").eq(0),
+		ch2 = $("input:checkbox").eq(1);
+	ch1.attr('id', 'checkbox-1');
+	ch2.attr('id', 'checkbox-2');
+	ch1.after('<label for="checkbox-1"></label>');
+	ch2.after('<label for="checkbox-2"></label>');
 });

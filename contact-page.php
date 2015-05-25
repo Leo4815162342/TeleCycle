@@ -20,6 +20,6 @@ Template Name: Contact Us Page
 				</div>
 			<?php endwhile; ?>
 		<?php endif; ?>
-	</div>		
+	</div>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>
