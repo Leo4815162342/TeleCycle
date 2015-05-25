@@ -886,7 +886,7 @@ label.req:after {
   display: none;
 }
 .wpcf7-checkbox input:checked + label {
-  background-image: url("img/checkmark.png") no-repeat center center;
+  background-image: url("img/checkmark.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
