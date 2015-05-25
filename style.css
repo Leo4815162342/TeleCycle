@@ -886,7 +886,9 @@ label.req:after {
   display: none;
 }
 .wpcf7-checkbox input:checked + label {
-  background: url("img/checkmark.png") no-repeat center center;
+  background-image: url("img/checkmark.png") no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .wpcf7-checkbox label {
   position: relative;
@@ -894,6 +896,7 @@ label.req:after {
   width: 34px;
   height: 34px;
   border: 2px solid #cacbcb;
+  background-color: #fff;
   cursor: pointer;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1030,7 +1033,7 @@ div.wpcf7-validation-errors {
   }
 
   .wpcf7-checkbox input:checked + label {
-    background: url("img/checkmark-2x.png") no-repeat center center;
+    background-image: url("img/checkmark-2x.png");
     background-size: 22px 19px;
   }
 }

@@ -901,7 +901,9 @@ label {
   input {
     display: none;
     &:checked + label {
-      background: url('img/checkmark.png') no-repeat center center;
+      background-image: url('img/checkmark.png') no-repeat center center;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
   }
   label {
@@ -910,6 +912,7 @@ label {
     width: 34px;
     height: 34px;
     border: 2px solid #cacbcb;
+    background-color: #fff;
     cursor: pointer;
     @include border-radius(5px);
   }
@@ -1039,7 +1042,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
       background-size: 11px 24px;
     }
     .wpcf7-checkbox input:checked + label {
-      background: url("img/checkmark-2x.png") no-repeat center center;
+      background-image: url("img/checkmark-2x.png");
       background-size: 22px 19px;
     }
 }
